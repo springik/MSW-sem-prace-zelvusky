@@ -24,7 +24,11 @@ def get_frames(video_path, output_directory, frames=10):
         ret, frame = capture.read()
 
         if ret:
-            video_name = os.path.basename(video_path).split(".")[0]
+            split_path = os.path.basename(video_path).split(".")
+            video_name = (
+                split_path[0] if len(split_path) == 2
+                else split_path[0] + "." + split_path[1]
+            )
             output_path = os.path.join(
                 output_directory,
                 f"{video_name}_frame_{i + 1:02d}.jpg"
