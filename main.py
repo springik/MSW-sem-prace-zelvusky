@@ -19,9 +19,10 @@ def show_segmented_frames():
     for file_path in os.listdir(f"{RESOURCES_DIR}/frames"):
         result, mask = segment(f"{RESOURCES_DIR}/frames/{file_path}")
         #cv2.imshow("Maska", mask)
-        #cv2.imshow(f"Frame {file_path}", result)
-        cv2.imwrite(f"./docs/postupne_snimky/prvni_snaha/{file_path}", result)
-        #cv2.waitKey(0)
+        cv2.imshow(f"Frame {file_path}", result)
+        #cv2.imwrite(f"./docs/postupne_snimky/tweaking_7/{file_path}", result)
+        cv2.imwrite(f"{OUTPUT_DIR}/finals/{file_path}", result)
+        cv2.waitKey(0)
     cv2.destroyAllWindows()
 
 

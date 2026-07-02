@@ -1,0 +1,1 @@
+Hezké, ale máme v tom i bordel

@@ -1,0 +1,1 @@
+Lehkým zvýšením velikosti jádra morfologických funkcí a zvýšením dilatace pro získání pozadí jsme se dostaly k výsledku, kde už není zahrnuta drobná nečistota uprostřed snímků videa C10.24Reh 
